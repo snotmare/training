@@ -1,0 +1,30 @@
+{
+  "name": "typescript-generics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/typescript-generics.module.js",
+  "types": "dist/typescript-generics.module.d.ts",
+  "scripts": {
+    "build": "tsc --watch",
+    "init": "npm i",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -L --exec ./node_modules/.bin/ts-node -- ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snotmare/typescript-generics.git"
+  },
+  "author": "Benjamin J Ferguson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snotmare/typescript-generics/issues"
+  },
+  "homepage": "https://github.com/snotmare/typescript-generics#readme",
+  "devDependencies": {
+    "@types/node": "^10.12.24",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}
