@@ -1,4 +1,5 @@
 /**
+ * There are 2 places to add generic parameters. This focuses on classes.
  * 1. Add generics to the Duplicator class so that the duplicate method will return an array of the same type as the
  * value you pass in the constructor.
  * 2. Mouse over the array variable in the Tester class and to verify it is a string array.

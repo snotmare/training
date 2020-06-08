@@ -10,7 +10,7 @@
 export class Tester3Solution {
 	constructor() {
 		let rows: User[] = [
-			new User(1,'Gandalf'),
+			new User(1, 'Gandalf'),
 			new User(2, 'Arwyn'),
 			new User(3, 'Frodo'),
 			new User(4, 'Gimli')

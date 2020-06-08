@@ -1,4 +1,7 @@
 /**
+ * Generics have a single purpose, which is to improve the lives of developers by type-checking code. The Mapper class below is a helpful for manipulating objects,
+ * but it is not helpful to the developer when using the results later. We can add some generics to improve on the usability of this class.
+ * 
  * 1. Add generics to the Mapper class so that the key is returned as the correct type instead of unknown. You'll need to add a new genric variable
  * to the class that represents the key.
  * 2. Add a value mapper to the Mapper class similar to how the key mapper works. You'll need to add a new generic variable to the class for the value.
@@ -12,18 +15,18 @@
  * 7. Sicne we are hard coding the value mapper, you can remove the value generic from the DescriptionMapper and hard code a string for the Mapper value generic.
  * 8. In the tester constructor, create a new DescriptionMapper instead of a Mapper.
  * 9. Make sure that the map returned by the toMap() method returns a Map<number, string>.
- * 10. In the toMap() method of the Mapper class, remove the generics on the new Map<K, V>(). Notice that the method still compiles fine. However, notice how the
- * map variable is defined as a Map<any, any>. This compiles because the "any" type removes all compile time checks.
- * 11. In the toMap() method of the Mapper class, change the generics of the new Map<K, V>() to Map<unknown, unknown>(). Notice how you now get a compile "not assignable"
- * error. This is why "unknown" is better than "any". It allows you to still provide any value, but it retains compile type checking.
+ * 10. In the toMap() method of the Mapper class, remove the generics on the new Map<K, V>(). Notice that the method still builds fine. However, notice how the
+ * map variable is defined as a Map<any, any>. This builds because the "any" type removes all build time checks.
+ * 11. In the toMap() method of the Mapper class, change the generics of the new Map<K, V>() to Map<unknown, unknown>(). Notice how you now get a  * "not assignable"
+ * error. This is why "unknown" is better than "any". It allows you to still provide any value, but it retains build time checking.
  * 12. Undo the previous 2 steps so the toMap() method once again creates a new Map<K, V>(). Change the accumulator.set() method to pass in a (key, key) intead of a
- * (key, value). Notice the compile error. When creating an API, having generics helps users of the API have strongly typed results, but it also helps your internal
- * code to be type checked. Undo this change.
+ * (key, value). Notice the error. When creating an API, having generics helps users of the API have strongly typed results, but it also helps your internal code to
+ * be type checked. Undo this change.
  */
 export class Tester3Exercise {
 	constructor() {
 		let rows: User[] = [
-			new User(1,'Gandalf'),
+			new User(1, 'Gandalf'),
 			new User(2, 'Arwyn'),
 			new User(3, 'Frodo'),
 			new User(4, 'Gimli')

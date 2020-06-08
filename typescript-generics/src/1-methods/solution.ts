@@ -1,5 +1,5 @@
 /**
- * - Notice the <T> before the ( of the duplicate method. This declares a variable for the genric that can be
+ * - Notice the <T> before the ( of the duplicate method. This declares a variable for the generic that can be
  * used anywhere in the method. You cannot use that generic variable anywhere outside the method. It is 
  * method-scoped.
  * - By convention, the generic variable is a single charactor name (ex: T). In more complicated situations,
