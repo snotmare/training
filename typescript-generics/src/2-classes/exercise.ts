@@ -3,10 +3,12 @@
  * value you pass in the constructor.
  * 2. Mouse over the array variable in the Tester class and to verify it is a string array.
  */
-class Tester {
+export class Tester2Exercise {
 	constructor() {
 		let duplicator = new Duplicator('value');
 		let array = duplicator.duplicate(3);
+
+		console.log(array);
 	}
 }
 

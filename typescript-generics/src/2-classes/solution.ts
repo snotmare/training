@@ -3,10 +3,12 @@
  * can be used anywhere inside the class. It is class-scoped.
  * - When building a class that uses generics, you treat any generic variable as an "unknown" type.
  */
-class Tester {
+export class Tester2Solution {
 	constructor() {
 		let duplicator = new Duplicator('value');
 		let array = duplicator.duplicate(3);
+
+		console.log(array);
 	}
 }
 

@@ -9,6 +9,14 @@
 			"script": "start",
 			"path": "typescript-generics/",
 			"problemMatcher": []
+		},
+		{
+			"type": "npm",
+			"script": "init",
+			"path": "typescript-generics/",
+			"problemMatcher": [],
+			"label": "npm: init - typescript-generics",
+			"detail": "npm i"
 		}
 	]
 }
