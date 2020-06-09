@@ -15,7 +15,7 @@
 			"script": "init",
 			"path": "typescript-generics/",
 			"problemMatcher": [],
-			"label": "npm: init - typescript-generics",
+			"label": "init - typescript-generics",
 			"detail": "npm i"
 		}
 	]
