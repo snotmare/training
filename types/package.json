@@ -1,9 +1,9 @@
 {
-  "name": "typescript-generics",
+  "name": "types",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/typescript-generics.module.js",
-  "types": "dist/typescript-generics.module.d.ts",
+  "main": "dist/types.module.js",
+  "types": "dist/types.module.d.ts",
   "scripts": {
     "build": "tsc --watch",
     "init": "npm i",

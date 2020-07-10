@@ -11,11 +11,26 @@
 			"problemMatcher": []
 		},
 		{
+			"label": "start types",
 			"type": "npm",
-			"script": "init",
+			"script": "start",
+			"path": "types/",
+			"problemMatcher": []
+		},
+		{
+			"type": "npm",
+			"script": "init typescript-generics",
 			"path": "typescript-generics/",
 			"problemMatcher": [],
 			"label": "init - typescript-generics",
+			"detail": "npm i"
+		},
+		{
+			"type": "npm",
+			"script": "init types",
+			"path": "typescript-generics/",
+			"problemMatcher": [],
+			"label": "init - types",
 			"detail": "npm i"
 		}
 	]
