@@ -17,7 +17,8 @@ export class Example {
 		let number1: number = <any>'';
 		let number2: number = <number><unknown>'';
 		
-		//valueUnknown[1] = ''; //Compiler error
+		valueAny[0] = '';
+		//valueUnknown[0] = ''; //Compiler error
 	}
 
 	/**
