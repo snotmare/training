@@ -17,52 +17,6 @@ export class Names {
 	
 	/* Example 2 */
 	
-	hngNotation() {
-		let numWeight = 180; // or nWeight
-		let strName = 'Fred'; // or sName
-		let dteBirthday = new Date(); // or dBirthday
-		let aryAnimals = [];
-		
-		//Read this line outloud explaining wha the result will be
-		console.log(strName + ' weighs ' + numWeight + ' and was born on ' + dteBirthday);
-		
-		for(let strAnimal of aryAnimals) {
-			console.log('Animal: ' + strAnimal);
-		}
-	}
-	
-	//More readable
-	noHungarianNotation() {
-		let weight = 180;
-		let name = 'Fred';
-		let birthday = new Date();
-		let animals = [];
-		
-		console.log(name + ' weighs ' + weight + ' and was born on ' + birthday);
-		
-		
-		//This is still ok...
-		for(let i = 0; i < animals.length; i++) {
-			console.log('Animal: ' + animals[i]);
-		}
-		
-		//But this is better...
-		for(let animal of animals) {
-			console.log('Animal: ' + animal);
-		}
-
-		//Fancy...
-		animals.forEach(animal => console.log('Animal: ' + animal));
-		
-		//Works, but risky...
-		animals.forEach(console.log);
-	}
-	
-	
-	
-	
-	/* Example 3 */
-	
 	//Do a search or 's' or 'date'
 	shortNames() {
 		let s = 'some string';
@@ -74,7 +28,7 @@ export class Names {
 	
 	
 	
-	/* Example 4 */
+	/* Example 3 */
 	
 	longNames() {
 		//Too long
