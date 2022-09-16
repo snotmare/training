@@ -365,7 +365,7 @@ class BestWorkOrder {
 	private dateDue?: string;
 	private projectManager?: string;
 	private status?: string;
-	private note?: string
+	private note?: string;
 
 	constructor(options: WorkOrderOptions) {
 		//Set values
