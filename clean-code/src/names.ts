@@ -48,3 +48,18 @@ export class Names {
 		
 	}
 }
+
+/**
+ * Example 4
+ * Redundant naming (don't do this)
+ */
+export class User {
+	userName: string;
+	userBirthDate: Date;
+}
+
+//Do this instead
+export class User2 {
+	name: string;
+	birthDate: Date;
+}
