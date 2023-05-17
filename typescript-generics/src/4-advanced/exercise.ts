@@ -2,7 +2,7 @@
  * //TODO Add description
  * 
  * Adding Generics
- * 1. Start by adding a generic for the key, "K". This will actually take us a step back for now. This change will let you pass in numbers instead of
+ * 1. Start by adding a generic in the extract method for the key, "K". This will actually take us a step back for now. This change will let you pass in numbers instead of
  * the strings "id" and "name". We'll come back to this.
  * 2. Add a generic for the value, "V". You'll need to declare V, use it with the value passed in, return V, and cast the new object to V. When
  * you are done, you should see 2 errors inside the .forEach() method.
@@ -35,10 +35,11 @@
  * is useful to require a constructor to be passed in, so we will use this example to explore how that works.
  * 14. Create a new exported type called Constructor with a generic of V. Assign the new type the value "{new (): V;}". This creates a new type that has
  * is "newable", meaning it can be called the same way you create a new Object(). The V binds the return type to what's being created. 
- * 15. Inside the extract method, replace the new <V>{} with new constructor().
- * 16. Inside the tester constructor, pass in "User" as the 2nd parameter of the extract method. Notice the error. This is because the User constructor
+ * 15. Add a parameter to the extract method for passing in the constructor type "constructor: Constructor<V>". It should be before tke keys array.
+ * 16. Inside the extract method, replace the new <V>{} with new constructor().
+ * 17. Inside the tester constructor, pass in "User" as the 2nd parameter of the extract method. Notice the error. This is because the User constructor
  * currently requires 3 parameters to be passed in, which does not match the type we created requiring 0 parameters.
- * 17. Change all variables in the User constructor to be optional. Alternatively, change the declaration of our Constructor type to
+ * 18. Change all variables in the User constructor to be optional. Alternatively, change the declaration of our Constructor type to
  * "{new (...args: any): V;}"
  */
 export class Tester4Exercise {
