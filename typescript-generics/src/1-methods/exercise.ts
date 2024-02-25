@@ -11,6 +11,7 @@
 export class Utils {
 	static test() {
 		let array = Utils.duplicate('value', 3);
+		console.log(array);
 	}
 
 	static duplicate(value: unknown, count: number): unknown[] {

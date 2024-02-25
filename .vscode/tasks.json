@@ -19,7 +19,7 @@
 		},
 		{
 			"type": "npm",
-			"script": "init typescript-generics",
+			"script": "init",
 			"path": "typescript-generics/",
 			"problemMatcher": [],
 			"label": "init - typescript-generics",
@@ -27,7 +27,7 @@
 		},
 		{
 			"type": "npm",
-			"script": "init types",
+			"script": "init",
 			"path": "typescript-generics/",
 			"problemMatcher": [],
 			"label": "init - types",
